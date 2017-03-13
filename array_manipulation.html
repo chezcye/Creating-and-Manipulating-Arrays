@@ -1,49 +1,12 @@
+<!DOCTYPE html>
 <html>
 	<head>
-		<script> 
-			function writeIt(){
-				var weekDays = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
-				writeArray("Week Days", weekDays);
-				var weekEnd = new Array();
-				weekEnd.push("Saturday");
-				weekEnd.push("Sunday");
-				writeArray("Weekend", weekEnd);
-				var week = weekDays.concat([]);
-				week. unshift(weekEnd[1]);
-				week.push(weekEnd[0]);
-				writeArray("Week", week);
-				var midWeek = week.slice(2,5);
-				writeArray("Mid Week", midWeek); 
-				var sortedWeek = week.sort();
-				document.write("<b>Sorted Days :</b><br>");
-				for (dayIndex in sortedWeek){
-					document.write(sortedWeek[dayIndex] + "<br>");
-				} 
-		
-				var summer = ["June", "July", "August"];
-				writeArray("Summer Months", summer);
-				
-				var spring = ["March", "April", "May"];
-				writeArray("Spring Months", spring);
-				
-				var fall = ["September", "October", "November"];
-				writeArray("Fall Months", fall);
-				
-				var winter = ["December", "January", "February"];
-				writeArray("Winter Months", winter);
-				
-				var year = winter.concat(spring, summer, fall);
-				writeArray("Months of the Year", year);
-			}
-			
-			function writeArray(msg, arr){
-				var arrString = arr.join(" | ");
-				document.write("<b>" + msg + ": </b>" + arrString + "<br><br>");
-			}
-		</script>
-	
+        <title>Creating and Manipulating Arrays</title>
+        
+        <script type="text/javascript" src="array_manipulation.js"></script>
 	
 	</head>
+    
 	<body onload="writeIt()">
 	
 	
